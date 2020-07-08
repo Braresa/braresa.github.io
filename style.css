@@ -12,7 +12,8 @@ header {
     font-style: italic;
     text-align: top;
     color: #8f9296;
-    font-size: 200px
+    font-size: 200px;
+    opacity: 0.5
 }
 
 .hlink {

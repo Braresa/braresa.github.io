@@ -1,22 +1,29 @@
 body {
+    background-image: url('backgroundImage.jpg');
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     color: #474747;
     font-size: 20px;
-    background-color: rgb(185, 185, 185)
+    background-color: rgb(185, 185, 185);
+    background-size: 2000px 1000px;
      }
 header {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    color:#1f2124;
-    font-size: 50px;
-    background-color: rgb(192, 192, 192)
+    font-family: branda;
+    font-style: italic;
+    text-align: top;
+    color: #8f9296;
+    font-size: 200px
 }
 
 .hlink {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color: #474747;
    font-size: 70px;
+}
+
+@font-face {
+  font-family: branda;
+  src: url(assets/Branda-yolq.ttf);
 }
 
 
@@ -65,10 +72,11 @@ p.p1 {
   font-size: 17px;
 }
 
-p.p2 {
+h1.embreve {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
 }
 
-  p.ifDisabled {
-    font-size: 13px
-  }
+p.p2 {
+  font-size: 15px;
+}

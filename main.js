@@ -40,5 +40,5 @@ aboutMeScroll();
 if(targetAnim.length) {
 window.addEventListener('scroll', debounce(function() {
     aboutMeScroll();
-}, 30));
+}, 200));
 }

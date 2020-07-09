@@ -1,83 +1,72 @@
 body {
-    background-image: url('backgroundImage.jpg');
-    font-family: 'Roboto Mono', monospace;
     text-align: center;
     color: #474747;
     font-size: 20px;
-    background-color: rgb(185, 185, 185);
-    background-size: 2000px 1000px;
-     }
-header {
-    font-family: branda;
-    font-style: italic;
-    text-align: top;
-    color: #8f9296;
-    font-size: 200px;
-    opacity: 0.5
-}
-
-.hlink {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   color: #474747;
-   font-size: 70px;
-}
+    background-color: rgb(49, 46, 46)
+    }
 
 @font-face {
   font-family: branda;
   src: url(assets/Branda-yolq.ttf);
 }
 
+@font-face {
+  font-family: overscan;
+  src: url(assets/CrtOverscan-Regular.ttf);
+}
 
-.link {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #474747;
-    font-size: 70px;
+@font-face {
+  font-family: corruptedFile;
+  src: url(assets/corrupetdFile.ttf);
+}
+.container-fluid {
+  position: relative ;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.container-fluid .content {
+  position: absolute;
+  bottom: 80%;
+  left: 30%;
+  font-style: italic;
+  font-family: branda;
+  font-size: 200px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  color: #3e4145;
+}
+
+div.abT {
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 100px;
+  font-family: corruptedFile;
+  text-align: center;
+  background-color: black
+}
+
+[data-aboutanim] {
+  opacity: 0;
+  transition: .5s;
+}
+
+[data-aboutanim="title"] {
+  transform: translate3d(20px, 0px, 0px);
+}
+
+[data-aboutanim="text"] {
+  transform: translate3d(-20px, 0px, 0px);
+}
+
+[data-aboutanim].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px)
 }
 
 
-.hlink {
-    font-family: fantasy;
-    color: #474747;
-    font-size: 70px; 
-    }
-body.dark {
-  background-color: #1f2124;
-  color: #fff;
-}
-
-.link { color: #474747; }
-.link:hover { background-color: #474747; color: #DEDEDC; }
 
 
-body.dark header {
-  color: #edebe4
-}
 
-body.dark p {
-  color: #edebe4
-}
 
-body.dark div.mysocial  {
-  color: #edebe4
-}
-
-body.dark a.hlink  {
-  color: #edebe4
-}
-
-body.dark a.hlink:hover  {
-  color: #edebe4
-}
-
-p.p1 {
-  font-size: 17px;
-}
-
-h1.embreve {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-}
-
-p.p2 {
-  font-size: 15px;
-}

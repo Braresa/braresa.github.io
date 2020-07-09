@@ -24,6 +24,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   border-radius: 10px;
+  margin-top: 15x;
 }
 
 .container-fluid .content {
@@ -40,11 +41,13 @@ body {
 
 div.abT {
   border-radius: 10px;
-  margin: 20px;
+  margin-right: 300px;
+  margin-left: 300px;
   font-size: 100px;
   font-family: corruptedFile;
   text-align: center;
-  background-color: black
+  background-color: black;
+  background-position-x: left;
 }
 
 [data-aboutanim] {
@@ -60,11 +63,34 @@ div.abT {
   transform: translate3d(-20px, 0px, 0px);
 }
 
+[data-aboutanim="contact"] {
+  transform: translate3d(-20px, 0px, 0px);
+}
+
 [data-aboutanim].animate {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px)
 }
 
+div.abR {
+  align-content: center;
+}
+
+p.text {
+  margin: 25px;
+  font-size: 27px;
+}
+
+p.textD {
+  margin-right: 30px;
+  margin: 25px;
+  font-size: 25px;
+}
+
+ul.listConhecimento {
+  display: table;
+  margin: 0 auto;
+}
 
 
 

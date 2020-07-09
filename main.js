@@ -21,7 +21,7 @@ const targetAnim = document.querySelectorAll('[data-aboutanim]');
 const classAnimation = 'animate';
 
 function aboutMeScroll() {
-    const windowPosition = window.pageYOffset + ((window.innerHeight * 3) / 4)
+    const windowPosition = window.pageYOffset + ((window.innerHeight * 4) / 4)
     targetAnim.forEach(function(element) {
             if((windowPosition) > element.offsetTop) {
                 element.classList.add(classAnimation);
@@ -40,5 +40,5 @@ aboutMeScroll();
 if(targetAnim.length) {
 window.addEventListener('scroll', debounce(function() {
     aboutMeScroll();
-}, 200));
+}, 150));
 }
